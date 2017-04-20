@@ -1,0 +1,270 @@
+   * {
+		padding:0;
+		margin:0;
+	}
+
+	html, body {
+		height:100%;
+        width: 100%;
+	}
+
+	.skrollr-desktop body {
+		height:100% !important;
+        overflow-x:hidden;
+	}
+
+	body {
+		font-family:sans-serif;
+	}
+
+	p {
+		margin:1em 0;
+	}
+
+	.parallax-image-wrapper {
+		position:fixed;
+		left:0;
+		width:100%;
+		overflow:hidden;
+	}
+
+	.parallax-image-wrapper-50 {
+		height:50%;
+		top:-50%;
+	}
+
+	.parallax-image-wrapper-100 {
+		height:100%;
+		top:-100%;
+	}
+
+	.parallax-image {
+		display:none;
+		position:absolute;
+		bottom:0;
+		left:0;
+		width:100%;
+		background-repeat:no-repeat;
+		background-position:center;
+		background-size:cover;
+	}
+
+	.parallax-image-50 {
+		height:200%;
+		top:-50%;
+	}
+
+	.parallax-image-100 {
+		height:100%;
+		top:0;
+	}
+
+	.parallax-image.skrollable-between {
+		display:block;
+	}
+
+	.no-skrollr .parallax-image-wrapper {
+		display:none !important;
+	}
+
+	#skrollr-body {
+		height:100%;
+		overflow:visible;
+		position:relative;
+	}
+
+	.gap {
+		background:transparent center no-repeat;
+		background-size:cover;
+	}
+
+	.skrollr .gap {
+		background:transparent !important;
+	}
+
+	.gap-50 {
+		height:50%;
+	}
+
+	.gap-100 {
+		height:100%;
+	}
+
+	.header, .content {
+		background:#fff;
+		padding:1em;
+
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+	}
+
+	.content-full {
+		height:100%;
+	}
+
+	#done {
+		height:100%;
+	}
+    .welcome {
+      text-align: center;
+      background: #31d385;
+      color: #fff;
+    }
+
+    .welcome h3 {
+      padding: 98px 0 0 0;
+    }
+
+    .welcome h4 {
+      padding: 0 0 173px 0;
+    }
+        
+    h1 {
+      font-family: Raleway;
+      font-size: 88px;
+      line-height: 60px;
+      font-weight: 100;
+    }
+
+    h2 {
+      font-family: Raleway;
+      font-size: 54px;
+      line-height: 56px;
+      font-weight: 200;
+    }
+
+    h3 {
+      font-family: Raleway;
+      font-size: 68px;
+      line-height: 60px;
+      font-weight: 100;
+    }
+
+    h4 {
+      font-family: Raleway;
+      font-size: 34px;
+      line-height: 44px;
+      font-weight: 200;
+    }
+
+    h5 {
+      font-family: Raleway;
+      font-size: 20px;
+      line-height: 44px;
+      font-weight: 600;
+    }
+
+    .fade {
+      -webkit-transition: opacity 1s linear;
+      transition: opacity 1s linear;
+    }
+   
+        
+    #bannerSlider{
+        color: #fff;
+        padding-top: 200px;
+    }
+        
+.banner .logo {
+  text-align: center;
+}
+
+.banner h1 {
+  top: 129px;
+}
+
+.banner .since {
+  font-family: Raleway;
+  font-size: 32px;
+  line-height: 30px;
+  top: 217px;
+}
+
+.banner .scroll_down {
+
+  width: 100%;
+  bottom: 55px;
+}
+
+.banner .scroll_down a {
+    background: url(images/ico/scroll_down.png) no-repeat;
+    width: 22px;
+    height: 52px;
+    text-indent: -5000px;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    margin-down: 20px;
+    margin-top: 50px;
+}
+
+.banner .carousel-fade .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+
+.banner .carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.banner .carousel-fade .carousel-inner .active.left, .carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.banner .carousel-fade .carousel-inner .next.left, .carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.banner .carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+.banner .scroll_down, .banner .since, .banner h1, .banner .logo {
+  opacity: 1;
+  z-index: 22;
+  /*position: absolute;*/
+  width: 100%;
+}
+
+.banner .carousel-caption {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.banner .carousel-inner > .item {
+  background-size: cover;
+  background-position: center;
+  min-height: 700px;
+}
+
+.banner .carousel-indicators {
+  bottom: 162px;
+}
+
+.banner .carousel-indicators li {
+  display: inline-block;
+  width: 46px;
+  height: 4px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #615b57;
+  border: 1px solid #615b57;
+  border-radius: 10px;
+}
+
+.banner .carousel-indicators .active {
+  width: 46px;
+  height: 4px;
+  margin: 1px;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+}

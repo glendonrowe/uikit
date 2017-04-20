@@ -1,0 +1,415 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@{
+    <link href="~/Content/custom/button.css" rel="stylesheet" />
+    <style>
+        .container-fluid.body-content {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+
+        footer {
+            display: none;
+        }
+    </style>
+}
+<div class="parallax-image-wrapper parallax-image-wrapper-100"
+     data-anchor-target="#section1 + .gap"
+     data-bottom-top="transform:translate3d(0px, 200%, 0px)"
+     data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+    <div class="parallax-image parallax-image-100"
+         style="background-image:url(../../Images/coffee.jpg)"
+         data-anchor-target="#section1 + .gap"
+         data-bottom-top="transform: translate3d(0px, -80%, 0px);"
+         data-top-bottom="transform: translate3d(0px, 80%, 0px);"></div>
+    <!--the +/-80% translation can be adjusted to control the speed difference of the image-->
+</div>
+
+<div class="parallax-image-wrapper parallax-image-wrapper-100"
+     data-anchor-target="#section2 + .gap"
+     data-bottom-top="transform:translate3d(0px, 200%, 0px)"
+     data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+    <div class="parallax-image parallax-image-100"
+         style="background-image:url(../../Images/mac.jpg)"
+         data-anchor-target="#section2 + .gap"
+         data-bottom-top="transform: translate3d(0px, -80%, 0px);"
+         data-top-bottom="transform: translate3d(0px, 80%, 0px);"></div>
+</div>
+
+<div class="parallax-image-wrapper parallax-image-wrapper-50"
+     data-anchor-target="#section3 + .gap"
+     data-bottom-top="transform:translate3d(0px, 300%, 0px)"
+     data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+    <div class="parallax-image parallax-image-50"
+         style="background-image:url(../../Images/desk.jpg)"
+         data-anchor-target="#section3 + .gap"
+         data-bottom-top="transform: translate3d(0px, -60%, 0px);"
+         data-top-bottom="transform: translate3d(0px, 60%, 0px);"></div>
+</div>
+
+<div id="skrollr-body" style="padding-left: 0 !important; padding-right: 0 !important;">
+
+    <div class="header hide" id="section1">
+        <div>
+            &nbsp;
+        </div>
+    </div>
+    <section id="topsection" class="intro-section banner gap gap-100 container-vertical " style="background-image:url(../../Images/coffee.jpg);">
+        <div class="row-vertical">
+            <div id="bannerSlider">
+                <div class="top row">
+                    <div class="logo"><img src="images/compass.png" alt="" title="" width="140"></div>
+
+                    <div class="col-md-12 text-center">
+                        <h1>Ultikit</h1>
+                        <p class="since">A style guide and developer toolkit for IS application development.</p>
+                    </div>
+                </div>
+
+                <div class="scroll_down" style="bottom: 50.5649px;"><a href="#welcome">Scroll down</a></div>
+            </div>
+        </div><!-- /.carousel -->
+    </section>
+    <section id="welcome" class="welcome">
+        <div class="container">
+            <div class="row ubuntu">
+                <div class="col-md-6"><span class="-h1">About</span><br /><span class="-p">UltiKit is a style guide and developer toolkit for IS application development.</span></div>
+                <div class="col-md-6">
+                    <a href="#section3" class="custom-btn pull-right">Download&nbsp;a&nbsp;startup&nbsp;template</a>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-2">&nbsp;</div>
+                <div class="col-md-8">
+                    <div class="boxed">
+                        <p><a>Purpose</a></p>
+                        <p>To provide a collaboration tool bridging design and development. Ultikit also serves as a resource for new designers and developers to locate existing patterns for further use.</p>
+                    </div>
+                </div>
+                <div class="col-md-2">&nbsp;</div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-9">
+                    <h5>Things you can do</h5>
+                    <ul class="fa-ul">
+                        <li><i class="fa-li fa fa-check"></i> <a href="#core">Quickly create web applications with complete startup templates</a>.</li>
+                        <li><i class="fa-li fa fa-check"></i> <a href="#juggler">Generate responsive</a> web applications for all platforms.</li>
+                        <li><i class="fa-li fa fa-check"></i> Use <a href="#sdks">HTML, Bootstrap, or Material Design</a> to easily create applications.</li>
+                        <li><i class="fa-li fa fa-check"></i> <a href="#components">Angular boilerplate</a> for Bootstrap and Material Design frameworks.</li>
+                    </ul>
+                </div>
+                <h5>&nbsp;</h5>
+                <div class="col-md-3"><img src="~/Images/ico/comb.svg"></div>
+            </div>
+        </div>
+    </section>
+    <div class="content" id="section2">
+        <section class="section section-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img alt="Sass and Less support" src="Images/sass-less.png" class="img-responsive">
+                        <h3 style="font-size: 22px;"><strong>Preprocessors</strong></h3>
+                        <p>Currently in ISD we're using Bootstrap and Material which both ship with vanilla CSS, but its source code utilizes the two most popular CSS preprocessors, <a href="javascript:void(0);">Less</a> and <a href="javascript:void(0);">Sass</a>. Quickly get started with templates that come with precompiled CSS.</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img alt="Responsive across devices" src="Images/devices.png" class="img-responsive">
+                        <h3 style="font-size: 22px;"><strong>One framework, every device.</strong></h3>
+                        <p>Each template uses Bootstrap to easily and efficiently scale your websites and applications with a single code base, from phones to tablets to desktops with CSS media queries.</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img alt="Components" src="Images/components.png" class="img-responsive">
+                        <h3 style="font-size: 22px;"><strong>Full of features</strong></h3>
+                        <p>With our pre-configured templates, you get all of our commonly used HTML elements, dozens of custom HTML and CSS components, and awesome jQuery plugins.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="mid-section gap gap-100" style="background-image:url(../../Images/mac.jpg);">
+
+        <div class="container-vertical text-center">
+            <div class="top row-vertical">
+                <h3 class="hide" data-scrollreveal="enter from the top over 1s" data-sr-init="true" data-sr-complete="true">Ultikit</h3>
+                <h4 data-scrollreveal="enter from the bottom over 1s" data-sr-init="true" data-sr-complete="true">Providing a collaboration tool bridging design and development.</h4>
+            </div>
+        </div>
+    </div>
+    <div class="content content-full text-center" id="section3">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="panel panel-default my_panel">
+                                    <div class="panel-body" style="padding: 0 !important;">
+                                        <img src="~/Images/bootstrapsm.png" alt="" class="img-responsive center-block" />
+                                    </div>
+                                    <div class="panel-footer my_panel_footer">
+                                        <div class="row footer-content-row">
+                                            <div class="col-md-12">
+                                                <h3>HTML/Bootstrap</h3>
+                                                <ul class="text-left" style="padding: 0 20px 0 20px;">
+                                                    <li>Easy to Use</li>
+                                                    <li>The Speed of the Development</li>
+                                                    <li>Grid</li>
+                                                    <li>Responsiveness</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <p><i class="fa fa-info-circle" aria-hidden="true" style="color: red;"></i> <a class="help-instruction-link" data-toggle="modal" data-target="#bootstrapModal">Installation instructions</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <a href="~/Downloads/startbootstrap.zip" class="btn-big-green"><i class="fa fa-download"></i> Download</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="panel panel-default my_panel">
+                                    <div class="panel-body" style="padding: 0 !important;">
+                                        <img src="~/Images/materialsm.png" alt="" class="img-responsive center-block" />
+                                    </div>
+                                    <div class="panel-footer my_panel_footer">
+                                        <div class="row footer-content-row">
+                                            <div class="col-md-12">
+                                                <h3>HTML/Material</h3>
+                                                <ul  class="text-left" style="padding: 0 20px 0 20px;">
+                                                    <li>Design Consistency</li>
+                                                    <li>Adaptive UI Elements</li>
+                                                    <li>Intuitive Design (MD was built with the user in mind)</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <p><i class="fa fa-info-circle" aria-hidden="true" style="color: red;"></i> <a class="help-instruction-link" data-toggle="modal" data-target="#bootstrapModal">Installation instructions</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <a href="~/Downloads/startangularhtml.zip" class="btn-big-green"><i class="fa fa-download"></i> Download</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="panel panel-default my_panel">
+                                    <div class="panel-body" style="padding: 0 !important;">
+                                        <img src="~/Images/angularbootstrapsm.png" alt="" class="img-responsive center-block" />
+                                    </div>
+                                    <div class="panel-footer my_panel_footer">
+
+                                        <div class="row footer-content-row">
+                                            <div class="col-md-12">
+                                                <h3>Angular with Bootstrap</h3>
+                                                <p class="text-left">A starter project that combines AngularJS, Bootstrap, UI Router, UI Bootstrap, RequireJS in for starting building your website.</p>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <p><i class="fa fa-info-circle" aria-hidden="true" style="color: red;"></i> <a class="help-instruction-link" data-toggle="modal" data-target="#bootstrapAngularModal">Installation instructions</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <a href="~/Downloads/startangularbootstrap.zip" class="btn-big-green"><i class="fa fa-download"></i> Download</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="panel panel-default my_panel">
+                                    <div class="panel-body" style="padding: 0 !important;">
+                                        <img src="~/Images/angularmaterialsm.png" alt="" class="img-responsive center-block" />
+                                    </div>
+                                    <div class="panel-footer my_panel_footer">
+
+                                        <div class="row footer-content-row">
+                                            <div class="col-md-12">
+                                                <h3>Angular with Material</h3>
+                                                <p>A starter project for Material Design applications using Angular 1.x and Angular Material. The project combines UI Router, Angular Material, Angular Animate, and Express</p>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <p><i class="fa fa-info-circle" aria-hidden="true" style="color: red;"></i> <a class="help-instruction-link" data-toggle="modal" data-target="#materialAngularModal">Installation instructions</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                
+                                                <a href="~/Downloads/startangularmaterial.zip" class="btn-big-green"><i class="fa fa-download"></i> Download</a>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="final-section gap gap-50" style="background-image:url(../../Images/desk.jpg);height: 250px;">
+        <div class="container-vertical text-center">
+            <div class="top row-vertical">
+                <h3 class="hide" data-scrollreveal="enter from the top over 1s" data-sr-init="true" data-sr-complete="true">Ultikit</h3>
+                <h4 data-scrollreveal="enter from the bottom over 1s" data-sr-init="true" data-sr-complete="true">A resource for new designers and developers to locate existing patterns for further use.</h4>
+            </div>
+        </div>
+    </div>
+    <div class="content nav-copy" id="done">
+        <div class="pull-right custom-footer ">
+                <div class="custom-container -padded">
+                    <nav class="_nav">
+                        <ul class="_nav-list">
+                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                            <li>@Html.ActionLink("Bootstrap", "Index", "Bootstrap")</li>
+                            <li>@Html.ActionLink("Material", "Index", "Material")</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="bootstrapAngularModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">To Install</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Download the package and upzip the project into a directory of your choosing.</p>
+                    <p>Using a command prompt navigate to the project you've unzipped and into the <strong>angular-bootstrap-starter-master</strong> directory.</p>
+                    <p>Get all the dependency packages with <strong>npm install</strong> then build.</p>
+                    <p>To build all the 3rd party packages and put them in the lib directory run <strong>gulp install</strong>.</p>
+                    <p>Then to continuously build the less/style.less to the css directory and start a livereload web server on http://localhost run <strong>gulp</strong>.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="materialAngularModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">To Install</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Download the package and upzip the project into a directory of your choosing.</p>
+                    <p>Using a command prompt navigate to the project you've unzipped and into the <strong>angular-material-starter-master</strong> directory.</p>
+                    <p>Get all the dependency packages with <strong>npm install</strong>.</p>
+                    <p>Lastly run <strong>npm start</strong> to start a web server on http://localhost:5000.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="bootstrapModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">To Install</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Download the package and upzip the project into a directory of your choosing.</p>
+                    <p>Using a text editor, modify the index.html.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+@section scripts{
+    <script>
+        $(function () {
+            var fullHeight = $(window).height();
+            $(".intro-section").height(fullHeight);
+            $(".mid-section").height(fullHeight / 2);
+            $(".final-section").height(fullHeight / 3);
+            skrollr.init({
+                smoothScrolling: false,
+                mobileDeceleration: 0.004
+            });
+
+            $('a[href*="#"]:not([href="#"])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+}
